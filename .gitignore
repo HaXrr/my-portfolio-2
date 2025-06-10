@@ -4,3 +4,17 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+# Node
+
+.env
+.env.local
+
+# Logs
+*.log
+
+# Vite
+client/.vite
+server/.vite
+
+# VS Code
+.vscode/

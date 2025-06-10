@@ -57,10 +57,11 @@ const HeroSection = () => {
 
           <motion.div variants={itemVariants}>
             <div className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              <div className="mb-4">
+              <div className="mb-6 h-10 ">
                 Full Stack Developer specializing in{" "}
                 <TypingAnimation
                   texts={[
+                      "Clients innovative solutions",
                     "Modern Web Applications",
                     "Scalable Backend Systems", 
                     "Beautiful User Interfaces",
@@ -80,11 +81,11 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button
                 size="lg"
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("contact")}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 <Rocket className="mr-2 h-5 w-5" />
-                View My Work
+                Hold my Hand
               </Button>
               <Button
                 variant="outline"
@@ -124,11 +125,11 @@ const HeroSection = () => {
             className="flex justify-center gap-6 mb-16"
           >
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
+              { icon: Github, href: "https://github.com/HaXrr", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/hazratabubakar3322/", label: "LinkedIn" },
               { icon: Twitter, href: "#", label: "Twitter" },
               { icon: Instagram, href: "#", label: "Instagram" },
-            ].map((social, index) => (
+            ].map((social) => (
               <motion.a
                 key={social.label}
                 href={social.href}

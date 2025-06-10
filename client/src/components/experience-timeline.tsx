@@ -78,6 +78,7 @@ const ExperienceTimeline = () => {
 
   return (
     <section className="py-16 bg-slate-50/50 dark:bg-slate-900/50" ref={ref}>
+      <span className='absolute text-destructive text-sm right-0 md:px-10 bg-destructive-foreground' >dummy Data</span>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

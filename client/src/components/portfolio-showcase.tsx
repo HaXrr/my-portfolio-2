@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useState } from "react";
-import { ExternalLink, Github, Code, Palette, Database, Zap } from "lucide-react";
+import { ExternalLink, Github,Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

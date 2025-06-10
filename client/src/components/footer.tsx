@@ -14,16 +14,16 @@ const Footer = () => {
   ];
 
   const services = [
-    { href: "#", label: "Web Development" },
-    { href: "#", label: "Mobile Apps" },
-    { href: "#", label: "UI/UX Design" },
-    { href: "#", label: "Consulting" },
-    { href: "#", label: "Technical Writing" },
+    { href: "#contact", label: "Business Solutions" },
+    { href: "#contact", label: "Web Development" },
+    { href: "#contact", label: "Mobile Apps" },
+    { href: "#contact", label: "UI/UX Design" },
+    { href: "#contact", label: "Consulting" },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", color: "hover:bg-blue-600" },
-    { icon: Github, href: "#", color: "hover:bg-gray-700" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hazratabubakar3322/", color: "hover:bg-blue-600" },
+    { icon: Github, href: "https://github.com/HaXrr", color: "hover:bg-gray-700" },
     { icon: Twitter, href: "#", color: "hover:bg-blue-500" },
     { icon: Instagram, href: "#", color: "hover:bg-pink-600" },
   ];

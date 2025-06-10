@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -86,26 +86,26 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "hazrat.abubakar@example.com",
+      content: "hazratabubakar91@gmail.com",
       color: "text-blue-600 dark:text-blue-400",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
+      content: "+92 344 518- 1625",
       color: "text-emerald-600 dark:text-emerald-400",
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "San Francisco, CA",
+      content: "SWAT, KP, Pakistan",
       color: "text-purple-600 dark:text-purple-400",
     },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", color: "hover:bg-blue-600" },
-    { icon: Github, href: "#", color: "hover:bg-gray-700" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hazratabubakar3322/", color: "hover:bg-blue-600" },
+    { icon: Github, href: "https://github.com/HaXrr", color: "hover:bg-gray-700" },
     { icon: Twitter, href: "#", color: "hover:bg-blue-500" },
     { icon: Instagram, href: "#", color: "hover:bg-pink-600" },
   ];

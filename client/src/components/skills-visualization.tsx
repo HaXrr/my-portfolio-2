@@ -17,10 +17,12 @@ const SkillsVisualization = () => {
       label: "Frontend",
       color: "from-blue-500 to-purple-600",
       skills: [
-        { name: "React/NextJS", level: 95, experience: "3+ years" },
+        { name: "React/NextJS", level: 95, experience: "2.5+ years" },
         { name: "TypeScript", level: 90, experience: "2+ years" },
-        { name: "Tailwind CSS", level: 92, experience: "2+ years" },
+        { name: "Tailwind CSS", level: 92, experience: "3+ years" },
         { name: "Framer Motion", level: 88, experience: "1+ years" },
+        { name: "GSAP", level: 65, experience: "1.5+ years" },
+        { name: "Three JS", level: 55, experience: "0.5+ years" },
         { name: "Redux/Zustand", level: 85, experience: "2+ years" },
       ]
     },
@@ -29,6 +31,7 @@ const SkillsVisualization = () => {
       color: "from-emerald-500 to-teal-600",
       skills: [
         { name: "Node.js", level: 90, experience: "3+ years" },
+        { name: "AI integration", level: 70, experience: "1+ years" },
         { name: "Express.js", level: 88, experience: "2+ years" },
         { name: "PostgreSQL", level: 85, experience: "2+ years" },
         { name: "MongoDB", level: 82, experience: "2+ years" },
@@ -75,7 +78,7 @@ const SkillsVisualization = () => {
             Technical <span className="text-blue-600 dark:text-blue-400">Expertise</span>
           </h3>
           <p className="text-lg text-slate-600 dark:text-slate-300">
-            Interactive visualization of my technical skills and experience
+            my technical skills, experiences and expertise
           </p>
         </motion.div>
 

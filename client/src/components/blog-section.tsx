@@ -149,7 +149,7 @@ const BlogSection = () => {
             animate={isVisible ? "visible" : "hidden"}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {postsToShow.map((post, index) => (
+            {postsToShow.map((post) => (
               <motion.article
                 key={post.id}
                 variants={itemVariants}

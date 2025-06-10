@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Lightbulb, TrendingUp, Users } from "lucide-react";
+import { Code, Lightbulb } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import SkillsVisualization from "@/components/skills-visualization";
@@ -12,6 +12,7 @@ const AboutSection = () => {
   });
 
   const skills = [
+    { name: "Business Satisfaction", level: 100 },
     { name: "NextJS & React", level: 95 },
     { name: "Node.js & Express", level: 90 },
     { name: "Database Design", level: 88 },
@@ -57,7 +58,7 @@ const AboutSection = () => {
             variants={itemVariants}
             className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto"
           >
-            Passionate about creating innovative solutions that bridge the gap between design and functionality
+            Passionate about creating innovative solutions for businesses to align with their goals and objectives.
           </motion.p>
         </motion.div>
 
@@ -77,8 +78,8 @@ const AboutSection = () => {
                     Full Stack Excellence
                   </h3>
                   <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                    With expertise in modern web technologies, I specialize in creating scalable applications using NextJS, React, and Node.js. 
-                    My passion lies in building user-centric solutions that combine beautiful design with robust functionality.
+                    With expertise in modern web technologies, I specialize in creating scalable ai driven applications using NextJS, React, and Node.js.
+                    My passion lies in building user-centric solutions that combine <span className='animate-pulse-slow text-blue-600 dark:text-blue-400'>business</span> needs with robust functionality.
                   </p>
                 </CardContent>
               </Card>
@@ -93,7 +94,7 @@ const AboutSection = () => {
                   </h3>
                   <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                     I believe in continuous learning and staying at the forefront of technology. From advanced animations with Framer Motion 
-                    to seamless user experiences, I'm committed to delivering excellence in every project.
+                    to seamless user experiences, I've commited to creating innovative solutions that align with my business goals and objectives.
                   </p>
                 </CardContent>
               </Card>
