@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Code, Lightbulb, TrendingUp, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import SkillsVisualization from "@/components/skills-visualization";
+import ExperienceTimeline from "@/components/experience-timeline";
 
 const AboutSection = () => {
   const [ref, isVisible] = useIntersectionObserver({
@@ -160,6 +162,12 @@ const AboutSection = () => {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Advanced Skills Visualization */}
+        <SkillsVisualization />
+
+        {/* Professional Experience Timeline */}
+        <ExperienceTimeline />
       </div>
     </section>
   );

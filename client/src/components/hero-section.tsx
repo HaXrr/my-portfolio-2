@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Rocket, Download, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
+import TypingAnimation from "@/components/typing-animation";
 
 const HeroSection = () => {
   const scrollToSection = useSmoothScroll();
@@ -55,12 +56,24 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Full Stack Developer crafting exceptional digital experiences with{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">NextJS</span>,{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">React</span>, and{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">Node.js</span>
-            </p>
+            <div className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <div className="mb-4">
+                Full Stack Developer specializing in{" "}
+                <TypingAnimation
+                  texts={[
+                    "Modern Web Applications",
+                    "Scalable Backend Systems", 
+                    "Beautiful User Interfaces",
+                    "Cloud Architecture",
+                    "Performance Optimization"
+                  ]}
+                  className="font-semibold text-blue-600 dark:text-blue-400"
+                />
+              </div>
+              <p>
+                Crafting exceptional digital experiences with cutting-edge technologies and innovative solutions.
+              </p>
+            </div>
           </motion.div>
 
           <motion.div variants={itemVariants}>
