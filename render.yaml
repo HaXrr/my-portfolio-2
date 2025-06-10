@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: hazrr-portfolio-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install && npm run build
+    startCommand: cd server && npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        fromDatabase:
+          name: hazrr-portfolio-db
+          property: connectionString
+    autoDeploy: false
+
+databases:
+  - name: hazrr-portfolio-db
+    databaseName: hazrr_portfolio
+    user: hazrr_user
+    plan: free
