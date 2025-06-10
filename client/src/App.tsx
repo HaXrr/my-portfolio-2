@@ -8,7 +8,7 @@ import InteractiveCursor from "@/components/interactive-cursor";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about-section";
-import ProjectsSection from "@/components/projects-section";
+import PortfolioShowcase from "@/components/portfolio-showcase";
 import BlogSection from "@/components/blog-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
@@ -19,12 +19,13 @@ function App() {
       <ThemeProvider>
         <TooltipProvider>
           <div className="relative min-h-screen overflow-x-hidden">
+            <InteractiveCursor />
             <FloatingGeometry />
             <Navigation />
             <main>
               <HeroSection />
               <AboutSection />
-              <ProjectsSection />
+              <PortfolioShowcase />
               <BlogSection />
               <ContactSection />
             </main>
