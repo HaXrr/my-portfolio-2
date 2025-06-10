@@ -5,6 +5,15 @@ import { insertBlogPostSchema, insertContactMessageSchema } from "@shared/schema
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Health Check Route for Render deployment
+  app.get("/health", (req, res) => {
+    res.status(200).json({ 
+      status: "ok", 
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime()
+    });
+  });
+
   // Blog Posts Routes
   app.get("/api/blog-posts", async (req, res) => {
     try {
