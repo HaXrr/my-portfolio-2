@@ -19,7 +19,6 @@ const TypingAnimation = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {

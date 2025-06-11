@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useQuery } from "@tanstack/react-query";
-import type { BlogPost } from "@shared/schema";
+import type { BlogPost } from "@/lib/types.ts";
 
 const BlogSection = () => {
   const [ref, isVisible] = useIntersectionObserver({

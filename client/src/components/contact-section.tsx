@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
-import type { InsertContactMessage } from "@shared/schema";
+import type { InsertContactMessage } from "@/lib/types";
 
 const ContactSection = () => {
   const [ref, isVisible] = useIntersectionObserver({
